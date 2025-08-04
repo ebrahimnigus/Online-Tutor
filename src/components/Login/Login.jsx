@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom'; // ✅ import navigate
 import './Login.css';
 
 const Login = () => {
   const [formType, setFormType] = useState(null); // 'login', 'signup', or null
+  const navigate = useNavigate(); // ✅ initialize navigation
 
   return (
     <div className="min-h-screen bg-[#054b47] text-white flex flex-col">
@@ -33,7 +35,7 @@ const Login = () => {
             Learn online from expert tutors anytime, anywhere — tailored to your needs.
           </p>
 
-          {/* Login Button (hidden if login form is active) */}
+          {/* Login Button */}
           {formType !== 'login' && (
             <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
               <button
@@ -45,7 +47,7 @@ const Login = () => {
             </div>
           )}
 
-          {/* Sign Up Text (hidden if signup form is active) */}
+          {/* Sign Up Text */}
           {formType !== 'signup' && (
             <div className="mt-4">
               Create account?
@@ -65,17 +67,24 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Form or Image Section */}
+        {/* Form Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4, ease: 'easeOut' }}
           className="w-full md:w-1/2 flex justify-center"
         >
+          {/* Login Form */}
           {formType === 'login' && (
             <div className="bg-[#e6f4f3] text-[#054b47] rounded shadow-md p-6 w-full max-w-md">
               <h3 className="text-xl font-semibold mb-4">Login</h3>
-              <form className="flex flex-col gap-4">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  navigate('/home'); // ✅ Go to home after login
+                }}
+                className="flex flex-col gap-4"
+              >
                 <input
                   type="email"
                   placeholder="Email"
@@ -86,17 +95,24 @@ const Login = () => {
                   placeholder="Password"
                   className="border px-4 py-1 rounded text-black"
                 />
-                <button className="bg-[#054b47] text-white py-1 rounded hover:bg-[#06655f]">
+                <button type="submit" className="bg-[#054b47] text-white py-1 rounded hover:bg-[#06655f]">
                   Submit
                 </button>
               </form>
             </div>
           )}
 
+          {/* Signup Form */}
           {formType === 'signup' && (
             <div className="bg-[#e6f4f3] text-[#054b47] rounded shadow-md p-6 w-full max-w-md">
               <h3 className="text-xl font-semibold mb-4">Sign Up</h3>
-              <form className="flex flex-col gap-4">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  navigate('/home'); // ✅ Go to home after signup
+                }}
+                className="flex flex-col gap-4"
+              >
                 <input
                   type="text"
                   placeholder="Full Name"
@@ -112,7 +128,7 @@ const Login = () => {
                   placeholder="Password"
                   className="border px-4 py-1 rounded text-black"
                 />
-                <button className="bg-[#054b47] text-white py-1 rounded hover:bg-[#06655f]">
+                <button type="submit" className="bg-[#054b47] text-white py-1 rounded hover:bg-[#06655f]">
                   Register
                 </button>
               </form>
