@@ -11,7 +11,7 @@ const Login = () => {
     <div className="min-h-screen bg-[#054b47] text-white flex flex-col">
       
       {/* Header */}
-      <header className="flex justify-between items-center py-4 px-10">
+      <header className="flex justify-between items-center py-4 px-10 ">
         <h1 className="text-white text-2xl font-bold">Tutorful</h1>
         <nav className="flex items-center space-x-6">
           <a href="#" className="hover:underline">One-to-one tuition</a>
