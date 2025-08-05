@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="bg-white text-[#1a1a1a] min-h-screen">
       
-      {/* ✅ Navigation Bar (Inline in Home) */}
+      {/* ✅ Navigation Bar */}
       <header className="flex justify-between items-center py-4 px-6 md:px-20 bg-[#054b47] text-white">
         <h1 className="text-2xl font-bold">Tutorful</h1>
         <nav className="flex items-center gap-6">
@@ -19,8 +19,9 @@ const Home = () => {
         </nav>
       </header>
 
-      {/* Page Content */}
+      {/* ✅ Page Content */}
       <div className="px-6 md:px-20 py-12">
+
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="max-w-xl">
@@ -38,7 +39,7 @@ const Home = () => {
             </Link>
           </div>
           <div>
-            {/* Placeholder for hero image */}
+            {/* Hero Image Placeholder */}
             <div className="w-full max-w-md h-56 bg-gray-200 rounded-md flex items-center justify-center">
               <span className="text-gray-500">Hero Image</span>
             </div>
@@ -49,7 +50,7 @@ const Home = () => {
         <section className="mt-6">
           <h2 className="text-2xl font-semibold mb-6">Top Tutors</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Tutor Card 1 */}
+            {/* Tutor 1 */}
             <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
@@ -62,7 +63,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Tutor Card 2 */}
+            {/* Tutor 2 */}
             <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
@@ -75,7 +76,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Tutor Card 3 */}
+            {/* Tutor 3 */}
             <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
@@ -84,6 +85,32 @@ const Home = () => {
               <p className="text-sm text-gray-600">Geotechnical Engineering</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-yellow-500 font-bold">⭐ 4.7</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            {/* Tutor 4 – Jibril */}
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Jibril</h3>
+              <p className="text-sm text-gray-600">Transportation Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.6</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            {/* Tutor 5 – Abebe */}
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Abebe</h3>
+              <p className="text-sm text-gray-600">Water Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.5</span>
                 <button className="text-blue-600 underline text-sm">View Profile</button>
               </div>
             </div>
