@@ -8,6 +8,7 @@ import Profile from './components/Profile';
 import StudentDashboard from './components/StudentDashboard';
 import TutorDashboard from './components/TutorDashboard';
 import Settings from './components/Settings';
+import Register from './components/Register';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/tutor-dashboard" element={<TutorDashboard />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/Register" element={<Register />} />
       </Routes>
     </Router>
   );

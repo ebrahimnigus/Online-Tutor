@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 .home__img {
     background: url(../../assets/structure.avif);
     background-repeat: no-repeat;
