@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import image from '../assets/explain.webp';
 
 const Home = () => {
   return (
@@ -41,7 +42,12 @@ const Home = () => {
           <div>
             {/* Hero Image Placeholder */}
             <div className="w-full max-w-md h-56 bg-gray-200 rounded-md flex items-center justify-center">
-              <span className="text-gray-500">Hero Image</span>
+            <img
+            src={image}
+            alt="Explanation"
+            className="w-full max-w-lg h-60 object-cover rounded-1xl shadow-2xl border-2 border-gray-300 hover:scale-105 transition-transform duration-1000 ease-in-out"
+            />
+
             </div>
           </div>
         </section>
