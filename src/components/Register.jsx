@@ -23,10 +23,8 @@ const Register = () => {
           <a href="#contact" className="hover:underline" title="Talk to our support team">
             Contact
           </a>
-          
         </nav>
       </header>
-
       {/* Main Content */}
       <main className="flex flex-col md:flex-row items-center justify-center flex-grow px-10 py-10 md:py-20 space-y-10 md:space-y-0 md:space-x-10">
 
@@ -98,7 +96,7 @@ const Register = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-        >
+        > 
           <img
             src={civilImage}
             alt="Civil Engineering Tutor"
