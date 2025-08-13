@@ -86,68 +86,74 @@ const Login = () => {
           >
             {/* Login */}
             {formType === 'login' && (
-              <div className="bg-[#e6f4f3] text-[#054b47] rounded shadow-md p-6 w-full max-w-md">
+              <div className="text-[#e6f4f3] rounded shadow-md p-6 w-full max-w-md">
                 <h3 className="text-xl font-semibold mb-4">Login</h3>
                 <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    navigate('/home');
-                  }}
-                  className="flex flex-col gap-4"
-                >
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="border px-4 py-1 rounded text-black"
-                  />
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="border px-4 py-1 rounded text-black"
-                  />
-                  <button
-                    type="submit"
-                    className="bg-[#054b47] text-white py-1 rounded hover:bg-[#06655f]"
-                  >
-                    Submit
-                  </button>
-                </form>
+            onSubmit={(e) => {
+              e.preventDefault();
+              navigate('/home');
+            }}
+            className="space-y-4 bg-[#054b47]"
+          >
+              <input
+              type="email"
+              placeholder="Email"
+              required
+              className="w-full px-4 py-3 rounded-lg bg-white text-black focus:outline-none"
+              />
+              <input
+              type="password"
+              placeholder="Password"
+              required
+              className="w-full px-4 py-3 rounded-lg bg-white text-black focus:outline-none"
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 transition duration-300 py-3 rounded-lg font-semibold text-lg"
+            > Login
+            </button>
+          </form>
               </div>
             )}
 
             {/* Signup */}
             {formType === 'signup' && (
-              <div className="bg-[#e6f4f3] text-[#054b47] rounded shadow-md p-6 w-full max-w-md">
+              <div className="text-[#e6f4f3] rounded shadow-md p-6 w-full max-w-md">
                 <h3 className="text-xl font-semibold mb-4">Sign Up</h3>
                 <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    navigate('/home');
-                  }}
-                  className="flex flex-col gap-4"
-                >
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="border px-4 py-1 rounded text-black"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="border px-4 py-1 rounded text-black"
-                  />
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="border px-4 py-1 rounded text-black"
-                  />
-                  <button
-                    type="submit"
-                    className="bg-[#054b47] text-white py-1 rounded hover:bg-[#06655f]"
-                  >
-                    Register
-                  </button>
-                </form>
+            onSubmit={(e) => {
+              e.preventDefault();
+              navigate('/home');
+            }}
+            className="space-y-4 bg-[#054b47]"
+          >
+          
+              <input
+                type="text"
+                placeholder="Full Name"
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white text-black focus:outline-none"
+              />
+              <input
+              type="email"
+              placeholder="Email"
+              required
+              className="w-full px-4 py-3 rounded-lg bg-white text-black focus:outline-none"
+              />
+              <input
+              type="password"
+              placeholder="Password"
+              required
+              className="w-full px-4 py-3 rounded-lg bg-white text-black focus:outline-none"
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 transition duration-300 py-3 rounded-lg font-semibold text-lg"
+            > Register
+            </button>
+          </form>
               </div>
             )}
             {/* Empty Placeholder */}
