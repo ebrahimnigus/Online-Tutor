@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const tutorData = {
   'Structural Design': [
     {
       name: 'Eng. Meron Bekele',
+      title: 'Structural Engineer & ETABS Instructor',
+      bio: 'Expert in RC & Steel design using ETABS and SAFE.',
+    },
+    {
+      name: 'Eng. Gossaye Gemechu',
       title: 'Structural Engineer & ETABS Instructor',
       bio: 'Expert in RC & Steel design using ETABS and SAFE.',
     },
@@ -19,10 +25,20 @@ const tutorData = {
       title: 'Transportation Systems Analyst',
       bio: 'Specialist in highway geometric design & SUMO software.',
     },
+    {
+      name: 'Eng. Gemechu Tufa',
+      title: 'Transportation Systems Analyst',
+      bio: 'Specialist in highway geometric design & SUMO software.',
+    },
   ],
   Geotechnical: [
     {
       name: 'Eng. Samuel Kassa',
+      title: 'Geotechnical Consultant',
+      bio: 'Foundation and soil-structure interaction expert.',
+    },
+    {
+      name: 'Eng. Bedesa Gadissa',
       title: 'Geotechnical Consultant',
       bio: 'Foundation and soil-structure interaction expert.',
     },
@@ -33,10 +49,20 @@ const tutorData = {
       title: 'Hydraulic Engineer',
       bio: 'Water supply and drainage system design trainer.',
     },
+    {
+      name: 'Eng. Mahlet Dereje',
+      title: 'Hydraulic Engineer',
+      bio: 'Water supply and drainage system design trainer.',
+    },
   ],
   'Construction Management': [
     {
       name: 'Eng. Eyob Mekuria',
+      title: 'Project Manager | PMP Certified',
+      bio: 'Specialized in project planning, MS Project, and safety.',
+    },
+    {
+      name: 'Eng. Hayat Kedir',
       title: 'Project Manager | PMP Certified',
       bio: 'Specialized in project planning, MS Project, and safety.',
     },
@@ -45,9 +71,10 @@ const tutorData = {
 
 const FindTutor = () => {
   const [selectedCategory, setSelectedCategory] = useState('Structural Design');
+  const navigate = useNavigate(); // ✅ hook is now inside the component
 
   return (
-    <section className="bg-[#f4faf9] min-h-screen py-16 px-6" id='find-tutor'>
+    <section className="bg-[#f4faf9] min-h-screen py-16 px-6" id="find-tutor">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl font-bold text-[#054b47] mb-4 text-center">
@@ -77,7 +104,10 @@ const FindTutor = () => {
             {selectedCategory} Lectures
           </h3>
           <p className="text-gray-700">
-            Enhance your understanding of {selectedCategory.toLowerCase()} through in-depth tutoring and live practical demonstrations using the latest software and standards. All tutors are vetted and experienced in their field.
+            Enhance your understanding of {selectedCategory.toLowerCase()} through
+            in-depth tutoring and live practical demonstrations using the latest
+            software and standards. All tutors are vetted and experienced in their
+            field.
           </p>
         </div>
 
@@ -91,7 +121,10 @@ const FindTutor = () => {
               <h4 className="text-xl font-bold text-[#054b47]">{tutor.name}</h4>
               <p className="text-sm text-gray-600 mt-1">{tutor.title}</p>
               <p className="text-gray-700 mt-3">{tutor.bio}</p>
-              <button className="mt-4 px-4 py-2 bg-[#054b47] text-white rounded hover:bg-[#06655f]">
+              <button
+                onClick={() => navigate('/Register')}
+                className="mt-4 px-4 py-2 bg-[#054b47] text-white rounded hover:bg-[#06655f]"
+              >
                 View Profile
               </button>
             </div>

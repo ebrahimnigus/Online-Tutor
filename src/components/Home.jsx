@@ -61,7 +61,32 @@ const Home = () => {
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
               </div>
-              <h3 className="text-lg font-semibold">Jech Yow</h3>
+              <h3 className="text-lg font-semibold">Eng. Meron Bekele</h3>
+              <p className="text-sm text-gray-600">Structural Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.9</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Gossaye Gemechu</h3>
+              <p className="text-sm text-gray-600">Structural Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.9</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Yosef Alemu</h3>
               <p className="text-sm text-gray-600">Structural Engineering</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-yellow-500 font-bold">⭐ 4.9</span>
@@ -74,7 +99,7 @@ const Home = () => {
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
               </div>
-              <h3 className="text-lg font-semibold">Saceh Amon</h3>
+              <h3 className="text-lg font-semibold">Eng. Eyob Mekuria</h3>
               <p className="text-sm text-gray-600">Materials & Mechanics</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-yellow-500 font-bold">⭐ 4.8</span>
@@ -82,12 +107,37 @@ const Home = () => {
               </div>
             </div>
 
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Hayat Kedir</h3>
+              <p className="text-sm text-gray-600">Materials & Mechanics</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.8</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Selam Haile</h3>
+              <p className="text-sm text-gray-600">Materials & Mechanics</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.8</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+
             {/* Tutor 3 */}
             <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
               </div>
-              <h3 className="text-lg font-semibold">Sund Yone</h3>
+              <h3 className="text-lg font-semibold">Eng. Samuel Kassa</h3>
               <p className="text-sm text-gray-600">Geotechnical Engineering</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-yellow-500 font-bold">⭐ 4.7</span>
@@ -95,12 +145,37 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Tutor 4 – Jibril */}
             <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
               </div>
-              <h3 className="text-lg font-semibold">Jibril</h3>
+              <h3 className="text-lg font-semibold">Eng. Bedesa Gadissae</h3>
+              <p className="text-sm text-gray-600">Geotechnical Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.7</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Ermias Tekile</h3>
+              <p className="text-sm text-gray-600">Geotechnical Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.7</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+
+            {/* Tutor 4 */}
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Lidya Hailu</h3>
               <p className="text-sm text-gray-600">Transportation Engineering</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-yellow-500 font-bold">⭐ 4.6</span>
@@ -108,12 +183,60 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Tutor 5 – Abebe */}
             <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
               <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
                 <span className="text-sm text-gray-500">Image</span>
               </div>
-              <h3 className="text-lg font-semibold">Abebe</h3>
+              <h3 className="text-lg font-semibold">Eng. Gemechu Tufa</h3>
+              <p className="text-sm text-gray-600">Transportation Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.6</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+            
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Jibril Akmel</h3>
+              <p className="text-sm text-gray-600">Transportation Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.6</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            {/* Tutor 5 */}
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Selam Tadesse</h3>
+              <p className="text-sm text-gray-600">Water Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.5</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Dr. Ashebir Tesfa</h3>
+              <p className="text-sm text-gray-600">Water Engineering</p>
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-yellow-500 font-bold">⭐ 4.5</span>
+                <button className="text-blue-600 underline text-sm">View Profile</button>
+              </div>
+            </div>
+
+            <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+              <div className="w-20 h-20 rounded-full bg-gray-300 mb-4 flex items-center justify-center">
+                <span className="text-sm text-gray-500">Image</span>
+              </div>
+              <h3 className="text-lg font-semibold">Eng. Mahlet Dereje</h3>
               <p className="text-sm text-gray-600">Water Engineering</p>
               <div className="mt-3 flex items-center justify-between">
                 <span className="text-yellow-500 font-bold">⭐ 4.5</span>
